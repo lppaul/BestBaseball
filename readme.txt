@@ -1,0 +1,1 @@
+1. Installation Instructions: Put all files in a folder of your choosing and then create a desktop shortcut to the index.html file.
