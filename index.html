@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <meta charset="utf-8">
+    <title>Best Baseball</title>
+  </head>
+  <body>
+    <center><h1>**Best Baseball**</h1></center>
+    <p id="testtext"></p>
+    <center><h2><p id="standings">Standings</p></h2></center>
+
+    <table style="width:100%">
+      <tr>
+        <th>Team</th>
+        <th>Wins</th>
+        <th>Losses</th>
+      </tr>
+      <tr>
+        <td id="team0Name"></td>
+        <td id="team0Wins">0</td>
+        <td id="team0Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team1Name"></td>
+        <td id="team1Wins">0</td>
+        <td id="team1Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team2Name"></td>
+        <td id="team2Wins">0</td>
+        <td id="team2Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team3Name"></td>
+        <td id="team3Wins">0</td>
+        <td id="team3Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team4Name"></td>
+        <td id="team4Wins">0</td>
+        <td id="team4Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team5Name"></td>
+        <td id="team5Wins">0</td>
+        <td id="team5Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team6Name"></td>
+        <td id="team6Wins">0</td>
+        <td id="team6Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team7Name"></td>
+        <td id="team7Wins">0</td>
+        <td id="team7Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team8Name"></td>
+        <td id="team8Wins">0</td>
+        <td id="team8Losses">0</td>
+      </tr>
+      <tr>
+        <td id="team9Name"></td>
+        <td id="team9Wins">0</td>
+        <td id="team9Losses">0</td>
+      </tr>
+
+    </table>
+    <br><br><br><br>
+    <center><h1>Pick Teams to Play A Game</h1></center>
+    <h1>Pick home team</h1>
+    <select id="teamSelect1" onchange="playNow(this.value)">
+      <option value="Select Home Team">Select Home Team</option>
+      <option value="Braves">Braves</option>
+      <option value="Marlins">Marlins</option>
+      <option value="Indians">Indians</option>
+      <option value="Mets">Mets</option>
+      <option value="Yankees">Yankees</option>
+      <option value="Padres">Padres</option>
+      <option value="Angels">Angels</option>
+      <option value="Tigers">Tigers</option>
+      <option value="Expos">Expos</option>
+      <option value="Royals">Royals</option>
+    </select>
+    <h1>Pick away team</h1>
+    <select id="teamSelect2" onchange="playNow2(this.value)">
+      <option value="Select Away Team">Select Away Team</option>
+      <option value="Braves">Braves</option>
+      <option value="Marlins">Marlins</option>
+      <option value="Indians">Indians</option>
+      <option value="Mets">Mets</option>
+      <option value="Yankees">Yankees</option>
+      <option value="Padres">Padres</option>
+      <option value="Angels">Angels</option>
+      <option value="Tigers">Tigers</option>
+      <option value="Expos">Expos</option>
+      <option value="Royals">Royals</option>
+    </select>
+
+    <br><br><table style = "width:100%">
+      <tr>
+        <td>Team</td>
+        <td>Score</td>
+        <td>Inning</td>
+      </tr>
+      <tr>
+        <td id="team1Playing"></td>
+        <td id="team1Score"></td>
+        <td id="currentInning" rowspan="2"></td>
+      </tr>
+      <tr>
+        <td id="team2Playing"></td>
+        <td id="team2Score"></td>
+
+      </tr>
+    </table>
+
+    <center><h2><p>Click Button to Advance Game</p></h2>
+    <button onclick="runGame()" id="simulateGame">Advance Game</button></center>
+
+    <center><h2><p>Click Button to Reset Game</p></h2>
+    <button onclick="gameReset()" id="resetGame">Reset Game</button></center>
+
+    <br><br><br><br><br><br><br><br><br><center><h2><p>Click Button to Reset All Stats**(CANNOT BE UNDONE)**</p></h2>
+    <button onclick="resetAll()" id="resetGame">Reset Stats</button></center>
+
+    <center><h1 id="winner"></h1></center>
+
+  <script src="main.js" charset="utf-8" type="text/javascript"></script>
+
+  </body>
+</html>
