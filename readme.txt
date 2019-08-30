@@ -1,1 +1,1 @@
-1. Installation Instructions: Put all files in a folder of your choosing and then create a desktop shortcut to the index.html file.
+1. Installation Instructions: Create a folder on your desktop for the game. Put all files in that folder and then create a desktop shortcut to the index.html file.
